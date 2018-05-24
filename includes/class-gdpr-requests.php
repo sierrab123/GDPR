@@ -173,7 +173,7 @@ class GDPR_Requests {
 					'user_id'  => $user->ID,
 					'meta_key' => $meta_key,
 				)
-			)
+			);
 			if ( $time ) {
 				wp_unschedule_event(
 					$time, 'clean_gdpr_user_request_key', array(
